@@ -1,4 +1,4 @@
-# Test data for the Octofit app
+# Test data for the Octofit Tracker database
 
 test_users = [
     {"username": "john_doe", "email": "john@example.com", "password": "password123"},
@@ -6,21 +6,21 @@ test_users = [
 ]
 
 test_teams = [
-    {"name": "Team Alpha", "description": "The first team."},
-    {"name": "Team Beta", "description": "The second team."},
+    {"name": "Team Alpha", "members": ["john_doe", "jane_smith"]},
+    {"name": "Team Beta", "members": []},
 ]
 
 test_activities = [
-    {"name": "Running", "calories_burned_per_minute": 10},
-    {"name": "Cycling", "calories_burned_per_minute": 8},
+    {"user": "john_doe", "activity": "Running", "duration": 30, "calories_burned": 300},
+    {"user": "jane_smith", "activity": "Cycling", "duration": 45, "calories_burned": 400},
 ]
 
 test_leaderboard = [
-    {"user": "john_doe", "points": 150},
-    {"user": "jane_smith", "points": 200},
+    {"team": "Team Alpha", "points": 100},
+    {"team": "Team Beta", "points": 50},
 ]
 
 test_workouts = [
-    {"user": "john_doe", "activity": "Running", "duration_minutes": 30},
-    {"user": "jane_smith", "activity": "Cycling", "duration_minutes": 45},
+    {"name": "Morning Run", "description": "A quick 5km run to start the day", "duration": 30},
+    {"name": "Evening Yoga", "description": "Relaxing yoga session", "duration": 60},
 ]

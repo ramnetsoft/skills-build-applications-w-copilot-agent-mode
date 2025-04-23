@@ -26,7 +26,10 @@ SECRET_KEY = "django-insecure-2$a8t1o@#3ms7zzehq#$j%4lu42^lnt$9(+mrx*jg3215wpl%6
 DEBUG = True
 
 # Allow all hosts
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'silver-eureka-579rwrx5vrc77xj-8000.app.github.dev',
+    'localhost'
+]
 
 
 # Application definition
