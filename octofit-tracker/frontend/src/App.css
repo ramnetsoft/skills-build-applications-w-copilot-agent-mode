@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* General background and text styling */
+body {
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark text for readability */
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation menu styling */
+.navbar {
+  background-color: #4caf50; /* Green background */
+  color: white;
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  color: white;
+}
+.navbar-nav .nav-link {
+  color: white;
+  margin-right: 10px;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffeb3b; /* Yellow on hover */
+}
+
+/* Button styling */
+button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049; /* Darker green */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  text-align: left;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* Heading styling */
+h1, h2, h3, h4, h5, h6 {
+  color: #4caf50; /* Green headings */
+}
+
+/* Link styling */
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Logo styling */
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
