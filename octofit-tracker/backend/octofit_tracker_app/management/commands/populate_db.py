@@ -26,8 +26,8 @@ class Command(BaseCommand):
 
         # Create teams
         team = Team(_id=ObjectId(), name='Blue Team')
+        team.members = users
         team.save()
-        team.members.set(users)
 
         # Create activities
         activities = [
